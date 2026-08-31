@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Himanshu Vishwakarma — Developer Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,500;0,600;1,500;1,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CSS-only dark mode switch: must sit before the elements it affects -->
+<input type="checkbox" id="theme-toggle" class="visually-hidden-toggle">
+<!-- CSS-only mobile nav switch -->
+<input type="checkbox" id="nav-toggle" class="visually-hidden-toggle">
+
+<header class="site-header">
+  <nav class="navbar" aria-label="Primary">
+    <a href="#home" class="nav-logo">
+      <span class="logo-bracket">&lt;</span>HV<span class="logo-bracket">/&gt;</span>
+    </a>
+
+    <label for="nav-toggle" class="nav-burger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <ul class="nav-links" id="main-nav">
+      <li><a href="#home"><span class="nav-file">Home</span></a></li>
+      <li><a href="#about"><span class="nav-file">About</span></a></li>
+      <li><a href="#skills"><span class="nav-file">Skills</span></a></li>
+      <li><a href="#projects"><span class="nav-file">Projects</span></a></li>
+      <li><a href="#journey"><span class="nav-file">Journey</span></a></li>
+      <li><a href="#contact"><span class="nav-file">Contact</span></a></li>
+    </ul>
+
+    <label class="theme-switch" for="theme-toggle" aria-label="Toggle dark mode">
+      <span class="theme-switch-track">
+        <span class="theme-switch-thumb"></span>
+      </span>
+      <span class="theme-switch-icon">☾</span>
+    </label>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Fig. 0 — Developer, in progress</p>
+        <h1 class="hero-title">Himanshu<mark class="hl">Vishwakarma</mark></h1>
+        <p class="hero-tagline">Python developer and data analyst, now plotting a
+          course through the MERN stack. I like problems with a clean, provable
+          answer — whether that's an algorithm or a regression line.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+          <a href="#" class="btn btn-outline" download>↓ Resume.pdf</a>
+        </div>
+      </div>
+
+      <figure class="chart-card">
+        <figcaption class="chart-caption">Fig. 1 — Price vs. Sales, retail dataset (n = 503)</figcaption>
+        <svg class="chart-svg" viewBox="0 0 360 280" role="img" aria-label="Scatter plot of retail sales data with a fitted regression line, R squared 0.964">
+          <line x1="40" y1="20" x2="40" y2="230" class="chart-axis"/>
+          <line x1="40" y1="230" x2="330" y2="230" class="chart-axis"/>
+          <line x1="40" y1="180" x2="330" y2="180" class="chart-grid"/>
+          <line x1="40" y1="130" x2="330" y2="130" class="chart-grid"/>
+          <line x1="40" y1="80" x2="330" y2="80" class="chart-grid"/>
+          <text x="12" y="234" class="chart-tick">0</text>
+          <text x="4" y="84" class="chart-tick">high</text>
+          <text x="330" y="248" class="chart-tick chart-tick-x">markdown %</text>
+          <text x="8" y="18" class="chart-tick">sales</text>
+
+          <circle cx="70" cy="205" r="4" class="chart-dot"><title>Lower markdown, lower sales</title></circle>
+          <circle cx="95" cy="190" r="4" class="chart-dot"><title>Lower markdown, lower sales</title></circle>
+          <circle cx="110" cy="160" r="4" class="chart-dot"><title>Sales rising with markdown %</title></circle>
+          <circle cx="130" cy="175" r="4" class="chart-dot"><title>Sales rising with markdown %</title></circle>
+          <circle cx="150" cy="140" r="4" class="chart-dot"><title>Mid-range markdown %</title></circle>
+          <circle cx="165" cy="150" r="4" class="chart-dot"><title>Mid-range markdown %</title></circle>
+          <circle cx="185" cy="120" r="4" class="chart-dot"><title>Above-average sales</title></circle>
+          <circle cx="200" cy="100" r="4" class="chart-dot"><title>Above-average sales</title></circle>
+          <circle cx="215" cy="115" r="4" class="chart-dot"><title>Above-average sales</title></circle>
+          <circle cx="235" cy="90" r="4" class="chart-dot"><title>High markdown, high sales</title></circle>
+          <circle cx="250" cy="70" r="4" class="chart-dot"><title>High markdown, high sales</title></circle>
+          <circle cx="270" cy="80" r="4" class="chart-dot"><title>High markdown, high sales</title></circle>
+          <circle cx="290" cy="55" r="4" class="chart-dot"><title>Top performer</title></circle>
+          <circle cx="305" cy="45" r="4" class="chart-dot"><title>Top performer</title></circle>
+
+          <line x1="55" y1="210" x2="318" y2="42" class="chart-fit"/>
+          <text x="200" y="150" class="chart-annot" transform="rotate(-27 200 150)">R² = 0.964</text>
+        </svg>
+        <figcaption class="chart-note">Individual project — R, ggplot2, linear &amp; multiple regression</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="about section">
+    <div class="section-head">
+      <p class="eyebrow">Fig. 2 — About</p>
+      <h2 class="section-title">About Me</h2>
+    </div>
+
+    <div class="about-grid reveal">
+      <div class="about-avatar-wrap">
+        <img
+          class="about-avatar"
+          src="https://ui-avatars.com/api/?name=Himanshu+Vishwakarma&background=35408E&color=fff&size=320&font-size=0.36&bold=true"
+          alt="Avatar placeholder for Himanshu Vishwakarma">
+        <div class="about-avatar-tag">B.Sc. CS · Bhavans College</div>
+      </div>
+
+      <div class="about-copy">
+        <p>I'm a Computer Science student who got hooked on programming through
+          <strong>Python</strong> — building GUI tools, small games, and event-driven
+          applications from the ground up.</p>
+        <p>I enjoy the puzzle-solving side of development: working through
+          <strong>algorithms and object-oriented design</strong> until a program
+          behaves exactly the way I intended it to.</p>
+        <p>Right now I'm expanding into front-end and full-stack work through this
+          MERN training — learning to think in <strong>HTML, CSS, JavaScript, React,
+          and Node.js</strong> the same way I already think in Python.</p>
+        <p>Outside of coursework, I've worked with real datasets in
+          <strong>R</strong> for statistical analysis, and I'm CDPL-certified in
+          Prompt Engineering with Generative AI. I'm most excited by projects that
+          mix clean logic with an interface someone actually enjoys using.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="skills section">
+    <div class="section-head">
+      <p class="eyebrow">Fig. 3 — Skills</p>
+      <h2 class="section-title">Skills</h2>
+    </div>
+
+    <div class="skills-columns reveal">
+      <div class="skills-col">
+        <h3 class="skills-col-title"><span class="status-dot status-confident"></span>Confident</h3>
+
+        <ul class="skill-simple-list">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Python</li>
+          <li>C++</li>
+        </ul>
+      </div>
+
+      <div class="skills-col">
+        <h3 class="skills-col-title"><span class="status-dot status-learning"></span>Currently Learning</h3>
+
+        <ul class="skill-simple-list">
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>MongoDB</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="skill-tags">
+      <span class="skill-tag">Tkinter</span>
+      <span class="skill-tag">Turtle Graphics</span>
+      <span class="skill-tag">MySQL</span>
+      <span class="skill-tag">Oracle SQL</span>
+      <span class="skill-tag">GitHub</span>
+      <span class="skill-tag">R · ggplot2</span>
+      <span class="skill-tag">Prompt Engineering</span>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="projects section">
+    <div class="section-head">
+      <p class="eyebrow">Fig. 4 — Projects</p>
+      <h2 class="section-title">Projects</h2>
+    </div>
+
+    <!-- CSS-only filter: radio buttons drive visibility via :has() -->
+    <div class="project-filter">
+      <input type="radio" name="project-filter" id="filter-all" class="visually-hidden-toggle" checked>
+      <input type="radio" name="project-filter" id="filter-web" class="visually-hidden-toggle">
+      <input type="radio" name="project-filter" id="filter-data" class="visually-hidden-toggle">
+      <label for="filter-all" class="filter-pill">All</label>
+      <label for="filter-web" class="filter-pill">Web</label>
+      <label for="filter-data" class="filter-pill">Data / Python</label>
+    </div>
+
+    <div class="project-grid" id="project-grid">
+
+      <article class="project-card reveal" data-cat="web">
+        <div class="project-thumb thumb-indigo">
+          <span class="thumb-glyph" aria-hidden="true">🌐</span>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Onenest — Multi-Service Platform</h3>
+          <p class="project-desc">A single website bringing multiple everyday services
+            together, with a simplified interface designed to cut down the need to
+            jump between separate platforms.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">UX Design</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">Live ↗</a>
+            <a href="#" class="project-link">Code ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-cat="data">
+        <div class="project-thumb thumb-teal">
+          <span class="thumb-glyph">📊</span>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Retail Fashion Boutique Sales Analytics</h3>
+          <p class="project-desc">Cleaned and explored a 503-record retail dataset in
+            R, then built regression models (R² = 0.964) to identify original price
+            and markdown % as the strongest predictors of sales.</p>
+          <div class="project-tags">
+            <span class="tag">R</span><span class="tag">ggplot2</span><span class="tag">Regression</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">Report ↗</a>
+            <a href="#" class="project-link">Code ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-cat="web">
+        <div class="project-thumb thumb-amber">
+          <span class="thumb-glyph">✅</span>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">To-Do List UI</h3>
+          <p class="project-desc">A clean, responsive task-list layout built while
+            practising semantic HTML and Flexbox — my first dedicated front-end
+            styling exercise in this course.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Flexbox</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">Live ↗</a>
+            <a href="#" class="project-link">Code ↗</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ JOURNEY / EDUCATION ============ -->
+  <section id="journey" class="journey section">
+    <div class="section-head">
+      <p class="eyebrow">Fig. 5 — Journey</p>
+      <h2 class="section-title">Education &amp; Journey</h2>
+    </div>
+
+    <ol class="timeline">
+      <li class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <p class="timeline-date">2023 – 2024</p>
+          <h3 class="timeline-title">Higher Secondary Certificate (12th)</h3>
+          <p class="timeline-text">Completed HSC with 75.40%, building the foundation
+            that led into a Computer Science degree.</p>
+        </div>
+      </li>
+      <li class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <p class="timeline-date">2025 – 2028 (in progress)</p>
+          <h3 class="timeline-title">B.Sc. Computer Science, Bhavans College</h3>
+          <p class="timeline-text">Currently in first year, focused on programming
+            fundamentals, algorithms, and object-oriented design.</p>
+        </div>
+      </li>
+      <li class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <p class="timeline-date">January 2026</p>
+          <h3 class="timeline-title">CDPL Certified — Prompt Engineering with Generative AI</h3>
+          <p class="timeline-text">36-hour certification (No. CDPLBVB0044) covering
+            practical prompt design for generative AI tools.</p>
+        </div>
+      </li>
+      <li class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <p class="timeline-date">2026 — Now</p>
+          <h3 class="timeline-title">MERN Stack Training</h3>
+          <p class="timeline-text">Learning HTML, CSS, JavaScript, React, Node.js and
+            MongoDB — starting with this hand-built portfolio site.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="contact section">
+    <div class="section-head">
+      <p class="eyebrow">Fig. 6 — Contact</p>
+      <h2 class="section-title">Contact</h2>
+    </div>
+
+    <div class="contact-grid reveal">
+      <div class="contact-info">
+        <p class="contact-lead">Open to internships, junior developer roles, and
+          collaborative projects. Reach out any time.</p>
+
+        <ul class="contact-list">
+          <li><span class="contact-icon">✉</span>
+            <a href="mailto:himanshu.vishwakarma@example.com">himanshu.vishwakarma@example.com</a></li>
+          <li><span class="contact-icon">☎</span>
+            <a href="tel:+910000000000">+91 00000 00000</a></li>
+          <li><span class="contact-icon">📍</span> Mumbai – 400057, Maharashtra</li>
+        </ul>
+
+        <div class="social-icons">
+          <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-icon" aria-label="GitHub">gh</a>
+          <a href="#" class="social-icon" aria-label="Twitter / X">x</a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contact-form" novalidate>
+        <label class="form-label" for="name">Name</label>
+        <input class="form-input" type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label class="form-label" for="email">Email</label>
+        <input class="form-input" type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label class="form-label" for="message">Message</label>
+        <textarea class="form-input form-textarea" id="message" name="message" rows="4" placeholder="Say hello..." required></textarea>
+
+        <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year">2026</span> Himanshu Vishwakarma. Built with HTML, CSS &amp; JS.</p>
+  <div class="social-icons social-icons-footer">
+    <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+    <a href="#" class="social-icon" aria-label="GitHub">gh</a>
+    <a href="#" class="social-icon" aria-label="Twitter / X">x</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
