@@ -385,8 +385,6 @@ body:has(#theme-toggle:checked) .theme-switch:hover .theme-switch-thumb {
   font-size: 1rem;
   font-style: italic;
   display: flex;
-  margin-left: 40%;
-  margin-right: 12%
   align-items: center;
   gap: 10px;
   margin-bottom: 20px;
@@ -408,8 +406,8 @@ body:has(#theme-toggle:checked) .theme-switch:hover .theme-switch-thumb {
 .skill-simple-list li {
   position: relative;
   padding: 9px 6px 9px 20px;
-  margin-left: -6px;
-  margin-right: -6px;
+  margin-left: 40%;
+  margin-right: 30%;
   font-family: var(--font-data);
   font-size: 0.86rem;
   color: var(--ink-soft);
