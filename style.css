@@ -385,6 +385,8 @@ body:has(#theme-toggle:checked) .theme-switch:hover .theme-switch-thumb {
   font-size: 1rem;
   font-style: italic;
   display: flex;
+  margin-left: 40%;
+  margin-right: 12%
   align-items: center;
   gap: 10px;
   margin-bottom: 20px;
